@@ -3,13 +3,31 @@
 <head>
   <meta charset="utf-8">
   <title>FiveCast</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./lib/styles.css">
 </head>
 <body>
-  <p>FiveCast Forecast Coming Soon! -JC</p>
+  <header></header>
+  <nav>
+    <form>
+      <input type="text" placeholder="City, State" id='city-state'>
+      <input type="submit" value="Find Weather" id='submit-city-state'>
+    </form>
+  </nav>
+  <div id="background-image"></div>
+  <section>
+    <div class="current-weather">
+      <p id="current-city-state"></p>
+      <p id="current-temp"></div>
+      <p id="current-humidity"></div>
+      <p id="current-high"></div>
+      <p id="current-low"></div>
+      <p id="current-description"></div>
+      <p id="current-icon"></div>
+    </div>
+  </section>
   
-      <script
-    src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
-  </script>
+  
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="main.bundle.js"></script>
   <script src="./lib/index.js"></script>
 </body>
