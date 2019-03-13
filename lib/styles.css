@@ -1,6 +1,148 @@
 body {
   background-color: #0f1e24;
   font-family: 'Overpass', sans-serif;  
+  color: #d6dbda;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+nav {
+  padding: 10px;
+  text-align: center;
+}
+
+nav form input[type=text] {
+  height: 28px;
+  width: 150px;
+  font-size: 20px;
+  background-color: #d6dbda;
+  border: 1px solid #d6dbda;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+nav form input[type=submit] {
+  height: 32px;
+  width: 150px;
+  font-size: 16px;
+  background-color: #40a8bf;
+  border: 1px solid #40a8bf;
+  border-radius: 4px;
+  color: #d6dbda;
+  vertical-align: middle;
+}
+
+nav form input[type=submit]:hover {
+  background-color: #A24F62;
+  border: 1px solid #A24F62;
+}
+
+header h1{
+  padding: 8px 0 4px 0;
+}
+
+.blue {
+  color: #40a8bf;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.current-weather {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.city-state {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#current-city-state {
+  color: #40a8bf;
+  font-size: 50px;
+  padding-top: 12px;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.current-weather-content {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.current-weather p {
+  font-size: 28px;
+  color: #ff4a53;
+  padding: 2px;
+}
+
+#hourly-weather {
+  display: grid;
+  grid-template-columns: 16% 17% 17% 17% 16%;
+  grid-template-rows: 50% 50%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.weather-hour {
+  padding: 10px;
+}
+
+.temp {
+  font-size: 34px;
+  padding-top: 6px;
+  padding-bottom: 3px;
+}
+
+.time {
+  font-size: 18px;
+}
+
+#daily-weather {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  text-align: center;
+}
+
+.daily-time-day {
+  color: #40a8bf;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 28px;
+}
+
+.daily-time-date {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.daily-temp {
+  font-size: 18px;
+  padding: 2px 0;
+}
+
+.daily-description {
+  padding-top: 10px;
+  color: #ff4a53;
+  font-size: 18px;
 }
 
 #background-image {
@@ -16,12 +158,47 @@ body {
   height: 100%;
 }
 
-.current-weather p {
-  font-size: 36px;
-  color: #ff4a53;
+@media screen and (max-width: 800px) {
+  body {
+    font-family: 'Overpass', sans-serif;  
+    color: #d6dbda;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  form {
+    margin-left: 30%;
+  }
+
+  input {
+    display: block;
+    margin: 5px 0;
+  }
+
+  #current-city-state {
+    text-align: center;
+  }
+
+  #hourly-weather {
+    display: block;
+  }
+
+  .weather-hour {
+    padding-top: 20px;
+  }
+
+  #daily-weather {
+    margin-top: 15px;
+    display: block;
+  }
+
+  .current-weather {
+    display: block;
+  }
+
+  .daily-time-day {
+    padding-top: 20px;
+  }
 }
 
-#current-city-state {
-  color: #40a8bf;
-  font-size: 42px;
-}
