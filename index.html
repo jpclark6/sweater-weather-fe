@@ -4,10 +4,14 @@
   <meta charset="utf-8">
   <title>FiveCast</title>
   <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="./lib/reset.css">
   <link rel="stylesheet" type="text/css" media="screen" href="./lib/styles.css">
 </head>
 <body>
-  <header></header>
+  <header>
+    <h1><span class='blue thin'>Five</span>Cast</h1>
+    <h2>Your goto forecast</h2>
+  </header>
   <nav>
     <form>
       <input type="text" placeholder="City, State" id='city-state'>
@@ -17,13 +21,17 @@
   
   <section>
     <div class="current-weather">
-      <p id="current-city-state"></p>
-      <p id="current-temp"></p>
-      <p id="current-humidity"></p>
-      <p id="current-high"></p>
-      <p id="current-low"></p>
-      <p id="current-description"></p>
-      <p id="current-icon"></p>
+      <div class="city-state">
+        <p id="current-city-state"></p>
+      </div>
+      <div class="current-weather-content">
+        <p id="current-temp"></p>
+        <p id="current-humidity"></p>
+        <p id="current-high"></p>
+        <p id="current-low"></p>
+        <p id="current-description"></p>
+        <p id="current-icon"></p>
+      </div>
     </div>
   </section>
 
