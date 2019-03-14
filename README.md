@@ -77,3 +77,10 @@ Be sure to `npm run build` and commit before each push to master. A few seconds 
 * [Mocha](https://mochajs.org/)
 * [Chai](https://chaijs.com/)
 
+
+## User login? Cookies? JSON web tokens
+## Any idea why heroku pg isn't working as expected?
+## What else other than buttons opening up more stuff?
+## Code organization?
+## 3 endpoints?
+## ok to always work off real API (heroku)?

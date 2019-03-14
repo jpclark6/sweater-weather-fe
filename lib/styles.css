@@ -58,6 +58,10 @@ header h1{
   color: #40a8bf;
 }
 
+.red {
+  color: #ff4a53;
+}
+
 .thin {
   font-weight: 300;
 }
@@ -73,7 +77,7 @@ header h1{
 }
 
 #current-city-state {
-  color: #40a8bf;
+  color: #ff4a53;
   font-size: 50px;
   padding-top: 12px;
   padding-right: 15px;
@@ -89,7 +93,7 @@ header h1{
 
 .current-weather p {
   font-size: 28px;
-  color: #ff4a53;
+  color: #40a8bf;
   padding: 2px;
 }
 
