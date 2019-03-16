@@ -165,6 +165,17 @@ header h1{
   padding: 2px;
 }
 
+#add-favorite {
+  text-align: right;
+  padding-right: 60px;
+}
+
+#add-favorite:hover {
+  color: #d6dbda;
+  transition: .2s;
+  cursor: default;
+}
+
 #hourly-weather {
   display: grid;
   grid-template-columns: 16% 17% 17% 17% 16%;
@@ -192,6 +203,12 @@ header h1{
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   text-align: center;
+}
+
+.see-more-hours {
+  text-align: center;
+  color: #A24F62;
+  margin-bottom: 15px;
 }
 
 .daily-time-day {
