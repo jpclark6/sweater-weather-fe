@@ -3,14 +3,25 @@
 <head>
   <meta charset="utf-8">
   <title>FiveCast</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="./lib/reset.css">
   <link rel="stylesheet" type="text/css" media="screen" href="./lib/styles.css">
 </head>
 <body>
   <header>
-    <h1><span class='blue thin'>Five</span>Cast</h1>
-    <h2>Your goto forecast</h2>
+    <div id="hello-user"></div>
+    <div id="title">
+      <h1><span class='blue thin'>Five</span>Cast</h1>
+      <h2>Your go to forecast</h2>
+    </div>
+    <div class="login-bin">
+      <p><span id='login-link' class=''>Log In</span></p>
+      <p><span id='register-link' class=''>Register</span></p>
+      <p><span id='see-favorites-link' class='hidden'>Favorites</span></p>
+      <p><span id='logout-link' class='hidden'>Sign Out</span></p>
+    </div>
   </header>
   <nav>
     <form>
@@ -18,7 +29,22 @@
       <input type="submit" value="Find Weather" id='submit-city-state'>
     </form>
   </nav>
-  
+  <section id='register' class='hidden register'>
+    <form>
+      <input type='text' placeholder='Username' id='register-username'>
+      <input type='password' placeholder='Password' id='register-password'>
+      <input type='password' placeholder='Password Confirmation' id='register-password-confirmation'>
+      <input type='submit' value='Register' id='submit-register'>
+    </form>
+  </section>
+  <section id='login' class='hidden login'>
+    <form>
+      <input type='text' placeholder='Username' id='login-username'>
+      <input type='password' placeholder='Password' id='login-password'>
+      <input type='submit' value='Log in' id='submit-login'>
+    </form>
+  </section>
+  <div class="loader-container hidden"><span class="loader"></span></div>
   <section>
     <div class="current-weather">
       <div class="city-state">
