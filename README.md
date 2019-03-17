@@ -27,6 +27,24 @@ Visit localhost:3000, or whatever port you decide to run it on, and enter in a l
 
 It is currently deployed [here](https://sweater-weather-1810.surge.sh) using surge.
 
+## Tech stack and tools
+
+1. [waffle.io](waffle.io) was used for an agile board with user stories written before starting
+2. JavaScript
+3. jQuery (for http requests)
+4. Webpack
+5. node.js
+
+## What's Next
+
+I have a few ideas where to go next with this project.
+
+1. Add icons for weather. I already have icons in the images folder that will work. It will require the filenames to be changed to match the API icon names for the current weather, and then use string interpolation to display the correct icon based on the weather. 
+
+2. Automatic user location. When a user visits the page it asks to use the user location and then automatically displays the forecast. Currently the API takes city, state and then converts it to latitude and logitude all on the back end, so the back end would need to be updated to take latitude and logitude as inputs from the front end.
+
+3. Currently the API key is stored in plain text as a cookie. Using web tokens would be a better idea, along with using web tokens for register and login. Currently the site is not very secure, minus that it uses https.
+
 ## Authors
 
 The back end and front end were both solo project by [me](https://github.com/jpclark6).
