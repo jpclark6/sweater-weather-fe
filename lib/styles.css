@@ -265,6 +265,12 @@ header h1{
   display: none;
 }
 
+#darksky {
+  max-width: 150px;
+  margin-left: 40%;
+  padding-top: 30px;
+}
+
 @media screen and (max-width: 800px) {
   body {
     font-family: 'Overpass', sans-serif;  
