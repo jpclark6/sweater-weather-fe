@@ -1,86 +1,36 @@
-# Self-Directed Front-End Start Kit
+# FiveCast - Weather Forecast
 
-## Initial Setup
+[FiveCast](https://sweater-weather-1810.surge.sh), or Sweater Weather front end, is a vanilla javascript (minus ajax requests) front end to consume the Sweater Weather back end API, [deployed API](https://sweater-weather-1810.herokuapp.com/api/v1/forecast?location=denver,co), [github](https://github.com/jpclark6/sweater-weather). It displays the current weather, up to 24 hours of hourly forecasts, and 5 days of daily forecasts, hence the name FiveCast. It allows for user registration and login, and the ability to favorite locations. In addition it displays a background image of the city you are viewing.
 
-1. Clone this starter kit repository and rename the repository to anything you'd like in one command:
+![Screenshot](./images/full_screen.png "Screenshot")
+![Screenshot](./images/mobile.png "Screenshot")
 
-  ```shell
-  git clone git@github.com:turingschool-projects/self-directed-fe-starter.git <name of your choice>
-  ```
-2. Change into the new director directory.
+## Getting Started
 
-3. Remove the default remote (origin):
+### Prerequsites
 
-  ```shell
-  git remote rm origin
-  ```
+You must have npm and node.js installed to successfully run this project.
 
-4. Create a new repository on GitHub.
+### Installing
 
-5. Add your new repository remote - **your remote URL and user name will be different in the command below**
+To run on localhost clone the repo to an appropriate directory, install dependencies, and then start a live server.
 
-  ```shell
-  git remote add origin git@github.com:<YOUR GITHUB NAME>/<PROJECT NAME>.git
-  ```
-
-6. Install the dependencies of the starter kit:
-
-  ```shell
-  npm install
-  ```
-
-7. Add, commit, and push up to your repository:
-
-  ```shell
-  git add .
-  git commit -m "Initial commit using starter kit"
-  git push origin master
-  ```
-
-## Running the Server Locally
-
-To see your code in action locally, you need to fire up a development server. Use the command:
-
-```shell
+```
+git clone git@github.com:jpclark6/sweater-weather-fe.git
+npm install
 npm start
 ```
 
-Once the server is running, visit in your browser:
+Visit localhost:3000, or whatever port you decide to run it on, and enter in a location to see the forecast. Note: back end may take up to 30 seconds to restart dynos if it hasn't run in a while.
 
-* `http://localhost:8080/` to run your application.
+## Deployment
 
+It is currently deployed [here](https://sweater-weather-1810.surge.sh) using surge.
 
-## GitHub Pages Setup
+## Authors
 
-This site will be served from GitHub Pages in production.
-
-In order to see your application running on production:
-
-1. From the command line, run `npm run build`.
-
-2. Commit and push your application to GitHub.
-
-3. Visit your repository on Github
-
-4. Go to Settings
-
-5. Under the Github Pages section of Options, select 'master' as your source and click `Save`
-
-Be sure to `npm run build` and commit before each push to master. A few seconds after you push up, you should be able to see your application at <https://your-github-username.github.io/project-name>.
+The back end and front end were both solo project by [me](https://github.com/jpclark6).
 
 
-## Built With
-
-* [JavaScript](https://www.javascript.com/)
-* [jQuery](https://jquery.com/)
-* [Express](https://expressjs.com/)
-* [Mocha](https://mochajs.org/)
-* [Chai](https://chaijs.com/)
 
 
-## User login? Cookies? JSON web tokens
-## Any idea why heroku pg isn't working as expected?
-## What else other than buttons opening up more stuff?
-## Code organization?
-## 3 endpoints?
-## ok to always work off real API (heroku)?
